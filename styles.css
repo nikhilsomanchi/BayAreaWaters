@@ -10,7 +10,7 @@ nav{
     align-items: center;
     min-height: 8vh;
     /*background-color: rgb(201, 201, 201);*/
-    background-color: white;
+    background-color: silver;
     text-decoration: none;
 }
 .logo{
@@ -43,7 +43,7 @@ li{
 /*background img*/
 #back{
     /*background: linear-gradient(rgba(0,0,0.5),#009688),url("img/e68b3dc7e1a7deb3b77e48926367073a.jpeg") center;*/
-    /*background: url("img/Screen Shot 2021-12-28 at 4.03.14 PM.png");*/
+    /* background: url("img/Screen Shot 2021-12-28 at 4.03.14 PM.png"); */
     background: url("img/Screen Shot 2022-01-06 at 2.06.55 PM.png");
     background-size: cover;
     height: 56vh;
@@ -133,11 +133,46 @@ li{
     margin-bottom: 20px;
 }
 .map{
-    display: block;
+    /* display: block;
     margin-left: auto;
     margin-right: auto;
     width: 42%;
-    padding-bottom: 100px;
+    padding-bottom: 100px; */
+    margin: 0 auto;
+    width: 50%;
 }
 
+/* Data Table */
+.tab{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.tab thead tr{
+    background-color: #e4b301;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+.tab th, td{
+    padding: 12px 15px;
+}
+.tab tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+.tab tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+  
+.tab tbody tr:last-of-type {
+    border-bottom: 2px solid #d6a801;
+}
 
+.tab tbody tr.active-row {
+    font-weight: bold;
+    color: #f8c91c;
+}
