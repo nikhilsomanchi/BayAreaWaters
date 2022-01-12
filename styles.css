@@ -12,6 +12,7 @@ nav{
     /*background-color: rgb(201, 201, 201);*/
     background-color: silver;
     text-decoration: none;
+    /* z-index: 10000; */
 }
 .logo{
     max-height: 8vh;
@@ -39,6 +40,15 @@ li{
     justify-content: space-around;
     width: 40%;
 }
+/* .nav-links ul li:hover{
+    background-color: #e4b301;
+} */
+/* .fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+} */
 
 /*background img*/
 #back{
@@ -107,7 +117,8 @@ li{
 #interactive{
     /*width: 100%;*/
     /*padding: 70px;*/
-    margin-bottom: 30px;
+    margin-bottom: 20vh;
+    padding-top: 4vh;
     /*background-color: #efefef;*/
 }
 .space p{
@@ -133,16 +144,19 @@ li{
     margin-bottom: 20px;
 }
 .map{
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 42%;
-    padding-bottom: 100px; */
-    margin: 0 auto;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 auto;
+    width: 50%; */
 }
 
 /* Data Table */
+#data{
+    background-color: #efefef;
+    padding-top: 4vh;
+    /* margin-bottom: 20vh; */
+}
 .tab{
     border-collapse: collapse;
     margin: 25px 0;
@@ -151,6 +165,12 @@ li{
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    margin-top: 5vh;
+    /* margin-bottom: 10vh; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 .tab thead tr{
     background-color: #e4b301;
@@ -175,4 +195,9 @@ li{
 .tab tbody tr.active-row {
     font-weight: bold;
     color: #f8c91c;
+}
+.space h1{
+    background-color: #efefef;
+    color: #efefef;
+    min-height: 10vh;
 }

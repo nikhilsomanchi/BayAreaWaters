@@ -11,9 +11,10 @@
     <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
     <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
     <!--    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;900&family=Work+Sans:wght@700&display=swap" rel="stylesheet">-->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 <body>
-<nav>
+<nav class = "bar">
     <div class="logo">
         <li>
             <!--            <a href="#">Bay Area Waters</a>-->
@@ -22,17 +23,17 @@
     </div>
     <ul class="nav-links">
         <li>
-            <a href="#">Parameters</a>
+            <a href="#parameters">Parameters</a>
         </li>
         <li>
-            <a href="#">Map</a>
+            <a href="#interactive">Map</a>
         </li>
         <li>
-            <a href="#">Chart</a>
+            <a href="#data">Data Table</a>
         </li>
-        <li>
+        <!-- <li>
             <a href="#">Flagged Pollution Sources</a>
-        </li>
+        </li> -->
     </ul>
 </nav>
 
@@ -81,9 +82,6 @@
 
 <!--map-->
 <section id="interactive">
-    <div class="space">
-        <p>space</p>
-    </div>
     <div class="title">
         <p>Map View</p>
     </div>
@@ -95,9 +93,6 @@
 
 <!-- data table -->
 <section id="data">
-    <div class="space">
-        <p>space</p>
-    </div>
     <div class="title">
         <p>Table View</p>
     </div>
@@ -176,7 +171,31 @@
             </tr>
         </tbody>
     </table>
+    <div class="space">
+        <h1>space</h1>
+    </div>
 </section>
+
+<script>
+    // link to section
+	var scroll = new SmoothScroll('a[href*="#"]');
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	    speed: 300
+    });
+
+    // sticky nav bar
+    // var height = $('#header').height();
+
+    // $(window).scroll(function() {
+    //     if($(this).scrollTop() > height){
+    //         $('.bar').addClass('fixed');
+    //     }
+    //     else{
+    //         $('.bar').removeClass('fixed');
+    //     }
+    // });
+</script>
 
 </body>
 </html>
+
