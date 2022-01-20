@@ -10,7 +10,7 @@ nav{
     align-items: center;
     min-height: 8vh;
     /*background-color: rgb(201, 201, 201);*/
-    background-color: silver;
+    background-color: #e8e6e0;
     text-decoration: none;
     /* z-index: 10000; */
 }
@@ -21,7 +21,7 @@ nav{
     left: 10%;
 }
 .logo img{
-    width: 70%;
+    width: 80%;
     height: auto;
 }
 a{
@@ -39,6 +39,9 @@ li{
     display: flex;
     justify-content: space-around;
     width: 40%;
+}
+.nav-links .link:hover{
+    color: #5e8a74;
 }
 /* .nav-links ul li:hover{
     background-color: #e4b301;
@@ -73,12 +76,14 @@ li{
     font-size: 40px;
     /*color: #35a4d9;*/
     /*color: #80dbf7;*/
-    color: rgba(0, 0, 0, 0.63);
+    /* color: #5e8a74 */
+    color: #2b475c;
     font-weight: bold;
     font-family: 'Work Sans', sans-serif;
 }
 .statement h1{
     font-family: 'Raleway', sans-serif;
+    color: #5e8a74;
 }
 
 /*parameters being tested*/
@@ -102,13 +107,13 @@ li{
     padding: 20px;
 }
 .param-box p{
-    color: #f8c91c;
+    color: #5e8a74;
     font-family: 'Work Sans', sans-serif;
     font-size: 25px;
     padding: 10px;
 }
 .param-box h3{
-    color: black;
+    color: #2b475c;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
 }
@@ -157,6 +162,9 @@ li{
     padding-top: 4vh;
     /* margin-bottom: 20vh; */
 }
+.title p{
+    color: #2b475c;
+}
 .tab{
     border-collapse: collapse;
     margin: 25px 0;
@@ -173,7 +181,7 @@ li{
     /* align-items: center; */
 }
 .tab thead tr{
-    background-color: #e4b301;
+    background-color: #5e8a74;
     color: #ffffff;
     text-align: left;
     font-weight: bold;
@@ -189,12 +197,12 @@ li{
 }
   
 .tab tbody tr:last-of-type {
-    border-bottom: 2px solid #d6a801;
+    border-bottom: 2px solid #5e8a74;
 }
 
 .tab tbody tr.active-row {
     font-weight: bold;
-    color: #f8c91c;
+    color: #5e8a74;
 }
 .space h1{
     background-color: #efefef;
